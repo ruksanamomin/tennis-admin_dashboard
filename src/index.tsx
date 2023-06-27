@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -11,7 +16,6 @@ import Users from './Pages/tables/users';
 import Matches from './Pages/tables/matches';
 import Courts from './Pages/tables/courts';
 
-
 const root = ReactDOM.createRoot(
 
   document.getElementById('root') as HTMLElement
@@ -19,7 +23,6 @@ const root = ReactDOM.createRoot(
 );
 
 const router = createBrowserRouter([
-
   {
 
     path: "/",
@@ -58,9 +61,8 @@ const router = createBrowserRouter([
 
 root.render(
   <React.StrictMode>
-<BrowserRouter>
-    <App />
-  </BrowserRouter>,
+<RouterProvider router={router} />
+    
   </React.StrictMode>
 );
 

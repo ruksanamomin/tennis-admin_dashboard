@@ -1,7 +1,7 @@
 import React from 'react';
 import Toolbar from './Pages/Sidebar/sidebar';
 import Home from './Pages/Home/home';
-import { Outlet } from 'react-router';
+
 
 
 
@@ -13,7 +13,7 @@ function App() {
     {/* <Home/> */}
   <div className='flex '>
   <Toolbar/>
-    <Outlet/>
+    
   </div>
    
     </>
